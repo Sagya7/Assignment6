@@ -1,0 +1,5 @@
+﻿  main.cpp
+c:\users\swalishe\desktop\crypto\dss\dss\main.cpp(19): warning C4018: '<': signed/unsigned mismatch
+c:\users\swalishe\desktop\crypto\dss\dss\main.cpp(102): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  DSS.vcxproj -> C:\Users\SWalishe\Desktop\Crypto\DSS\Debug\DSS.exe
+  DSS.vcxproj -> C:\Users\SWalishe\Desktop\Crypto\DSS\Debug\DSS.pdb (Partial PDB)
