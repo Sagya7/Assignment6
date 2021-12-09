@@ -101,8 +101,8 @@ int main()
 	One.Num[0] = 1;
 	srand(time(NULL));
 
-	p = StringToArray("8490596416367848650087159567646773591615403553294465336662715867127232816933488346501617931682626979");
-	q = StringToArray("4245298208183924325043579783823386795807701776647232668331357933563616408466744173250808965841313489");
+	p = StringToArray("6231720984236661927862601680191594334327223260139907210971108379566305783259160955632448191195213287");
+	q = StringToArray("3115860492118330963931300840095797167163611630069953605485554189783152891629580477816224095597606643");
 
 	cout << "\nImplementation of DSS\n";
 
@@ -122,14 +122,15 @@ int main()
 	ystring = value_number(y);
 
 
-	cout << "\nPublic key is  :";
-	cout << "\n\tp=" << value_number(p);
-	cout << "\n\tq=" << value_number(q);
-	cout << "\n\tg=" << gstring;
-	cout << "\n\ty=" << ystring;
+	cout << "\nPublic keys are  :";
+	cout << "\np =" << value_number(p);
 
-	cout << "\n\nPrivate key is :";
-	cout << "\n\tx=" << xstring;
+	cout << "\n\nq is also a prime number which is of the form nq + 1 = p, denoting a prime order subgroup" << endl;
+	cout << "\n\nq =" << value_number(q);
+	cout << "\n\ng =" << gstring;
+	cout << "\n\ny =" << ystring;
+
+	cout << "\n\nPrivate key is :" << xstring;
 
 	while (1) {
 
@@ -144,7 +145,7 @@ int main()
 		if (result == true)
 			cout << "\n Signatures are matching\n";
 		else
-			cout << "\n Signatures are not matching\n";
+			cout << "\nSignatures are not matching\n";
 
 	}
 	return 0;
